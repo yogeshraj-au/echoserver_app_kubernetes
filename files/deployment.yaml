@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: echoserver
+  namespace: echoserver
 spec:
   selector:
     matchLabels:
