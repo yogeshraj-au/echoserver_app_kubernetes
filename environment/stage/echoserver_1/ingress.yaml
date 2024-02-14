@@ -3,13 +3,13 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: echoserver
-  namespace: echoserver
+  #namespace: echoserver
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   ingressClassName: egress-nginx
   rules:
-    - host: echoserver.coffeemart.xyz
+    - host: echoserver-1.coffeemart.xyz
       http:
         paths:
           - path: /
@@ -21,5 +21,5 @@ spec:
                   number: 443
   tls:
     - hosts:
-        - echoserver.coffeemart.xyz
+        - echoserver-1.coffeemart.xyz
       secretName: echoserver-tls
