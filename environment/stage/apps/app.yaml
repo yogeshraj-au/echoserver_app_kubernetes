@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: echoserver-app
+  name: echoserver-app-1
   namespace: argo
   labels:
     argoapp: echoserver
