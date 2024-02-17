@@ -15,7 +15,7 @@ spec:
         app: echoserver
     spec:
       containers:
-        - image: k8s.gcr.io/e2e-test-images/echoserver:2.5
+        - image: imageimpressario/echoserver:1.0.15
           name: echoserver
           ports:
             - containerPort: 8080
