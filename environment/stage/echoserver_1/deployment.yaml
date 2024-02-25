@@ -15,7 +15,7 @@ spec:
         app: echoserver
     spec:
       containers:
-        - image: imageimpressario/echoserver:1.0.232
+        - image: imageimpressario/echoserver:1.0.233
           name: echoserver
           ports:
             - containerPort: 8080
